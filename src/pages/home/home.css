@@ -1,0 +1,62 @@
+.home {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #b9cadc; */
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  /* background-color: #a2cbf7; */
+}
+
+.homeImage img {
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.42);
+}
+
+.homeSearchInfo {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+  /* background-color: #f4a4a4; */
+}
+
+.homeTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.homeSubtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.homeSearchbar{
+  margin-top: 20px;
+}
+
+.homeResults {
+  background-color: #ccdaea;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width:800px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.homeResults h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #333;
+}
