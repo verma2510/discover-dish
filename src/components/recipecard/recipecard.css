@@ -37,3 +37,29 @@
 .favoriteButton.favorite {
   background-color: green;
 }
+
+@media (max-width: 768px) {
+  .recipeCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  .recipeCard img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .recipeCard h3 {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .favoriteButton {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .recipeCard h3 {
+    font-size: 18px;
+  }
+}

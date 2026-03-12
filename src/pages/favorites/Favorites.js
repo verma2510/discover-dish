@@ -16,7 +16,7 @@ export const Favorites = () => {
       <div className="favoritesWrapper">
         <h1 className="favoritesTitle">My Favorite Recipes</h1>
         {favorites.length > 0 ? (
-          <div className="favoriteList">
+          <div className="favoritesList">
             {favorites.map((recipe) => (
               <div className="favoriteItem" key={recipe.id}>
                 <RecipeCard recipes={recipe} />

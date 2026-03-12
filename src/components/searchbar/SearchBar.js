@@ -3,7 +3,6 @@ import "./searchbar.css";
 
 
 export const SearchBar = ({ setQuery }) => {
-  console.log(setQuery); 
   const [input, setInput] = useState("");
 
   const handleSearch = () => {
@@ -20,6 +19,11 @@ export const SearchBar = ({ setQuery }) => {
           placeholder="Search your dish..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSearch();
+            }
+          }}
         />
         <button className="searchButton" onClick={handleSearch}>
           Search

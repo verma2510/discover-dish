@@ -11,6 +11,8 @@
 .favoritesWrapper {
   padding: 20px;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
   /* background-color: aquamarine; */
 }
 
@@ -24,7 +26,8 @@
 
 .favoriteItem {
   position: relative;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin-bottom: 30px;
 }
 
@@ -35,4 +38,10 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .favoritesWrapper {
+    padding: 10px;
+  }
 }
